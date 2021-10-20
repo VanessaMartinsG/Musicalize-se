@@ -1,0 +1,282 @@
+@import "./global.scss";
+
+
+/**/
+.desktop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    font-family: "Ribeye";
+    font-size: 35px;
+    
+    img{
+        width: 30%;
+    }
+}
+
+.homeGame{
+    display: none;
+}
+
+@media (max-width: 767px){
+    .desktop{
+        display: none;
+    }
+
+    body{
+        background-color: black;
+    }
+
+    .homeGame{
+        padding: 70px 5px 0 5px;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+
+        .homeTop{
+            display: flex;
+            flex-direction: column;
+        
+        .homeTitle{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            img{
+                width: 50px;
+                height: 40px;
+            }
+    
+            #imgBefore{
+                transform: rotate(315deg);
+            }
+    
+            #imgAfter{
+                transform: rotate(25deg);
+            }
+    
+            h1{
+                color: rgb(239,210,85);
+                font-family: "Ribeye";
+                font-size: 25px;
+                text-shadow: 1px 2px 3px rgb(158, 158, 158);
+                padding: 5px;
+                margin-top: 15px;
+            }
+        }
+
+
+        .homeSubtitle{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-family: 'Open Sans';
+            font-size: 12px;
+            color: rgb(241, 229, 171);
+
+            p{
+                margin: 0 10px;
+                text-shadow: 1px 1px 2px rgb(158, 158, 158);
+            }
+            img{
+                width: 25px;
+            }
+        }
+
+     }
+
+     .homeBottom{
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+         
+        
+        .homeButtons{
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            justify-content: space-between;
+            margin-bottom: 100px;
+            width: 300px;
+
+
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #edf0f3;
+                color: black;
+                font-family: Spartan;
+                font-size: 15px;
+                font-weight: 600;
+                text-decoration: none;
+                width: 120px;
+                text-align: center;
+                height: 40px;
+                border-radius: 25px;
+                box-shadow: 1px 1px 2px #ffffff;
+                
+                img{
+                    margin-left: 10px;
+                    width: 25px;
+                }
+            }
+
+            a:hover{
+                color: rgb(199, 165, 15);
+                box-shadow: 1px 1px 6px rgb(239,210,85);
+            }
+        }
+
+        .homeEndPage{
+            display: flex;
+            flex-direction: row;
+            font-size: 12px;
+            width: 100%;
+            justify-content: space-between;
+            color: rgb(239,210,85);
+
+            b{
+                font-size: 12px;
+            }
+        }
+     }
+        
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+    .desktop{
+        display: none;
+    }
+
+    body{
+        background-color: black;
+    }
+
+    .homeGame{
+        padding: 30px 15px 0 15px;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+
+        .homeTop{
+            display: flex;
+            flex-direction: column;
+        
+        .homeTitle{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            img{
+                width: 100px;
+                height: 90px;
+            }
+    
+            #imgBefore{
+                transform: rotate(315deg);
+            }
+    
+            #imgAfter{
+                transform: rotate(25deg);
+            }
+    
+            h1{
+                color: rgb(239,210,85);
+                font-family: "Ribeye";
+                font-size: 50px;
+                text-shadow: 1px 2px 3px rgb(158, 158, 158);
+                padding: 20px;
+                margin-top: 25px;
+            }
+        }
+
+
+        .homeSubtitle{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            font-family: 'Open Sans';
+            font-size: 20px;
+            color: rgb(241, 229, 171);
+
+            p{
+                margin: 0 10px;
+                text-shadow: 1px 1px 2px rgb(158, 158, 158);
+            }
+            img{
+            
+                width: 25px;
+            }
+        }
+
+     }
+
+     .homeBottom{
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+        
+        .homeButtons{
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            width: 415px;
+
+
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #edf0f3;
+                color: black;
+                font-family: Spartan;
+                font-size: 20px;
+                font-weight: 600;
+                text-decoration: none;
+                width: 150px;
+                text-align: center;
+                height: 40px;
+                border-radius: 25px;
+                box-shadow: 1px 1px 2px #ffffff;
+                
+                img{
+                    margin-left: 10px;
+                    width: 28px;
+                }
+            }
+
+            a:hover{
+                color: rgb(199, 165, 15);
+                box-shadow: 1px 1px 6px rgb(239,210,85);
+            }
+        }
+
+        .homeEndPage{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            color: rgb(239,210,85);
+
+            b{
+                font-size: 15px;
+            }
+        }
+     }
+        
+    }
+}

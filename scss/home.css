@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**/
+.desktop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  font-family: "Ribeye";
+  font-size: 35px;
+}
+
+.desktop img {
+  width: 30%;
+}
+
+.homeGame {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+  body {
+    background-color: black;
+  }
+  .homeGame {
+    padding: 70px 5px 0 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .homeGame .homeTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homeGame .homeTop .homeTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homeGame .homeTop .homeTitle img {
+    width: 50px;
+    height: 40px;
+  }
+  .homeGame .homeTop .homeTitle #imgBefore {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  .homeGame .homeTop .homeTitle #imgAfter {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  .homeGame .homeTop .homeTitle h1 {
+    color: #efd255;
+    font-family: "Ribeye";
+    font-size: 25px;
+    text-shadow: 1px 2px 3px #9e9e9e;
+    padding: 5px;
+    margin-top: 15px;
+  }
+  .homeGame .homeTop .homeSubtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    color: #f1e5ab;
+  }
+  .homeGame .homeTop .homeSubtitle p {
+    margin: 0 10px;
+    text-shadow: 1px 1px 2px #9e9e9e;
+  }
+  .homeGame .homeTop .homeSubtitle img {
+    width: 25px;
+  }
+  .homeGame .homeBottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .homeGame .homeBottom .homeButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 100px;
+    width: 300px;
+  }
+  .homeGame .homeBottom .homeButtons a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #edf0f3;
+    color: black;
+    font-family: Spartan;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    width: 120px;
+    text-align: center;
+    height: 40px;
+    border-radius: 25px;
+    -webkit-box-shadow: 1px 1px 2px #ffffff;
+            box-shadow: 1px 1px 2px #ffffff;
+  }
+  .homeGame .homeBottom .homeButtons a img {
+    margin-left: 10px;
+    width: 25px;
+  }
+  .homeGame .homeBottom .homeButtons a:hover {
+    color: #c7a50f;
+    -webkit-box-shadow: 1px 1px 6px #efd255;
+            box-shadow: 1px 1px 6px #efd255;
+  }
+  .homeGame .homeBottom .homeEndPage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 12px;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #efd255;
+  }
+  .homeGame .homeBottom .homeEndPage b {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .desktop {
+    display: none;
+  }
+  body {
+    background-color: black;
+  }
+  .homeGame {
+    padding: 30px 15px 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .homeGame .homeTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .homeGame .homeTop .homeTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .homeGame .homeTop .homeTitle img {
+    width: 100px;
+    height: 90px;
+  }
+  .homeGame .homeTop .homeTitle #imgBefore {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  .homeGame .homeTop .homeTitle #imgAfter {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  .homeGame .homeTop .homeTitle h1 {
+    color: #efd255;
+    font-family: "Ribeye";
+    font-size: 50px;
+    text-shadow: 1px 2px 3px #9e9e9e;
+    padding: 20px;
+    margin-top: 25px;
+  }
+  .homeGame .homeTop .homeSubtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: #f1e5ab;
+  }
+  .homeGame .homeTop .homeSubtitle p {
+    margin: 0 10px;
+    text-shadow: 1px 1px 2px #9e9e9e;
+  }
+  .homeGame .homeTop .homeSubtitle img {
+    width: 25px;
+  }
+  .homeGame .homeBottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .homeGame .homeBottom .homeButtons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 50px;
+    width: 415px;
+  }
+  .homeGame .homeBottom .homeButtons a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #edf0f3;
+    color: black;
+    font-family: Spartan;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+    height: 40px;
+    border-radius: 25px;
+    -webkit-box-shadow: 1px 1px 2px #ffffff;
+            box-shadow: 1px 1px 2px #ffffff;
+  }
+  .homeGame .homeBottom .homeButtons a img {
+    margin-left: 10px;
+    width: 28px;
+  }
+  .homeGame .homeBottom .homeButtons a:hover {
+    color: #c7a50f;
+    -webkit-box-shadow: 1px 1px 6px #efd255;
+            box-shadow: 1px 1px 6px #efd255;
+  }
+  .homeGame .homeBottom .homeEndPage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #efd255;
+  }
+  .homeGame .homeBottom .homeEndPage b {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=home.css.map */
